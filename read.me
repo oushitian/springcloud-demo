@@ -2,4 +2,4 @@
 2.注意，eureka启动后,访问http://localhost:8761就可以，不需要加/eureka
 3.注意，eureka客户端也应该引入eureka-server的pom依赖
 4.一个eureka的客户端要启动两个断口，可以修改edit configration中的配置，把single instance only的钩子去掉即可
-5.增加新的boot模块时，简单做法是先创建一个远程仓库，把空目录clone下来，然后合并到本地工程目录，直接使用eclipse git插件上传就方便多了。
+5.这里发现个问题，就是新建module时，默认时cvs，要点击setting中的version control，然后把当前的方式改成git才能提交
