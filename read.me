@@ -2,3 +2,4 @@
 2.注意，eureka启动后,访问http://localhost:8761就可以，不需要加/eureka
 3.注意，eureka客户端也应该引入eureka-server的pom依赖
 4.一个eureka的客户端要启动两个断口，可以修改edit configration中的配置，把single instance only的钩子去掉即可
+5.eureka的自我保护机制，默认是90秒剔除。但是本地环境可以关闭自我保护机制并调小间隔时间
