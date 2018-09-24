@@ -3,4 +3,4 @@
 3.注意，eureka客户端也应该引入eureka-server的pom依赖
 4.一个eureka的客户端要启动两个断口，可以修改edit configration中的配置，把single instance only的钩子去掉即可
 5.eureka的自我保护机制，默认是90秒剔除。但是本地环境可以关闭自我保护机制并调小间隔时间
-6.利用clientdDsicover实现本地负载均衡
+6.利用clientdDsicover实现本地负载均衡（轮训，同一个服务第n次请求%服务器总数作为下标来取得其中的服务器：如1%2=1，2%2=0，3%2=1）
