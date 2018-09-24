@@ -1,4 +1,4 @@
-package com.fd.cloudeurakeserver.domain;
+package com.fd.cloudeurakecustomer.domain;
 
 public class User {
 
