@@ -1,0 +1,13 @@
+eureka:
+  #更改Eureka更新频率将打破服务器的自我保护功能
+  instance:
+      leaseRenewalIntervalInSeconds: 10
+      leaseExpirationDurationInSeconds: 30
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8765
+spring:
+  application:
+    name: service-feign-member
