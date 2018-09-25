@@ -1,5 +1,6 @@
 package com.fd.memberservice.controller;
 
+import com.fd.memberservice.feginclient.MemberFeginClient;
 import com.fd.memberservice.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,11 +16,11 @@ public class OrderController {
 
     //注入的是fegin的接口，代替restTemplate和ribbon
     @Autowired
-    private MemberService memberService;
+    private MemberFeginClient memberFeginClient;
 
     @RequestMapping("getMemberTest")
     public String getMemberTest(){
-        return memberService.getMember();
+        return memberFeginClient.getMember();
     }
 
 }

@@ -7,3 +7,7 @@ server:
 spring:
   application:
     name: service-feign-order
+#开启fegin的断路器
+fegin:
+  hystrix:
+    enabled: true
