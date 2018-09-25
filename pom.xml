@@ -18,6 +18,7 @@
 	<modules>
 		<module>cloud-eurake-server</module>
 		<module>cloud-eurake-client</module>
+		<module>cloud-eurake-customer</module>
 		<module>cloud-zuul</module>
 		<module>cloud-hystrix</module>
 		<module>cloud-ribbon</module>

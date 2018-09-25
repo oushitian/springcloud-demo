@@ -14,4 +14,5 @@ public class UserController {
         //通过restTemplate调用服务
         return "我是一个eureka提供者"+id;
     }
+
 }
