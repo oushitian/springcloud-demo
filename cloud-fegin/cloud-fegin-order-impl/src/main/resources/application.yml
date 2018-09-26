@@ -3,11 +3,11 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 server:
-  port: 8080
+  port: 8090
 spring:
   application:
     name: service-feign-order
-#开启fegin的断路器
-fegin:
+#表示开启fegin的断路器功能
+feign:
   hystrix:
     enabled: true

@@ -1,6 +1,6 @@
 package com.fd.memberservice.hystric;
 
-import com.fd.memberservice.service.MemberService;
+import com.fd.memberservice.feginclient.MemberFeginClient;
 import org.springframework.stereotype.Component;
 
 /**
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  * @Desc fegin客户端实现熔断器，必要实现fegin的接口，并且指定当前的实现类
  **/
 @Component
-public class SchedualServiceHiHystric implements MemberService {
+public class SchedualServiceHiHystric implements MemberFeginClient {
     @Override
     public String getMember() {
         return "当前服务不可用";
